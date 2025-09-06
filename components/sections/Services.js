@@ -54,7 +54,7 @@ export default function Services() {
   ]
 
   return (
-    <section className="section-padding">
+    <section className="section-padding carbon-fiber-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -64,7 +64,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6 text-brand-off-white">
             Serviciile <span className="text-accent-red">Noastre</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

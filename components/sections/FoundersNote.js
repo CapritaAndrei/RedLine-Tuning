@@ -20,7 +20,7 @@ export default function FoundersNote() {
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-brand-off-white">
                   O poveste <span className="text-accent-red">personală</span>
                 </h2>
               </div>
@@ -40,7 +40,7 @@ export default function FoundersNote() {
                       </div>
                     </div>
                     <div className="text-center mt-4">
-                      <h3 className="text-xl font-bold text-white">Andrei Popescu</h3>
+                      <h3 className="text-xl font-bold text-brand-off-white">Andrei Popescu</h3>
                       <p className="text-accent-red font-medium">Fondator Redline Tuning</p>
                     </div>
                   </div>
@@ -50,7 +50,7 @@ export default function FoundersNote() {
                 <div className="lg:col-span-2 space-y-6">
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <p>
-                      <strong className="text-white">Acum 8 ani, am avut aceeași problemă ca tine.</strong>
+                      <strong className="text-brand-off-white">Acum 8 ani, am avut aceeași problemă ca tine.</strong>
                     </p>
                     
                     <p>
@@ -58,7 +58,7 @@ export default function FoundersNote() {
                     </p>
                     
                     <p>
-                      <strong className="text-white">M-am hotărât să rezolv această problemă pentru toți proprietarii de mașini din București.</strong>
+                      <strong className="text-brand-off-white">M-am hotărât să rezolv această problemă pentru toți proprietarii de mașini din București.</strong>
                     </p>
                     
                     <p>
@@ -72,7 +72,7 @@ export default function FoundersNote() {
 
                   {/* Credentials */}
                   <div className="bg-background-primary rounded-xl p-6 space-y-4">
-                    <h4 className="font-semibold text-white mb-3">Certificări & Experiență:</h4>
+                    <h4 className="font-semibold text-brand-off-white mb-3">Certificări & Experiență:</h4>
                     <div className="grid sm:grid-cols-2 gap-3 text-sm">
                       <div className="flex items-center text-gray-300">
                         <span className="w-2 h-2 bg-accent-red rounded-full mr-3"></span>
@@ -95,7 +95,7 @@ export default function FoundersNote() {
 
                   {/* Personal Promise */}
                   <div className="border-l-4 border-accent-red pl-6">
-                    <p className="text-white font-medium italic">
+                    <p className="text-brand-off-white font-medium italic">
                       "Îți garantez personal că mașina ta va arăta ca în prima zi. Dacă nu ești 100% mulțumit, îți returnez banii și îmi asum costurile de remediere."
                     </p>
                     <div className="flex items-center mt-4">

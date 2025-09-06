@@ -10,19 +10,24 @@ module.exports = {
     extend: {
       colors: {
         background: {
-          primary: '#0b0b0d',
-          surface: '#121216',
-          elevated: '#1a1a1f'
+          primary: '#0f0f10',      // Off-Black from brand
+          surface: '#1a1a1c',      // Slightly lighter than primary
+          elevated: '#242426'      // Even lighter for elevated elements
         },
         accent: {
           red: {
-            DEFAULT: '#EF233C',
-            700: '#C1121F',
-            900: '#8B0000'
+            DEFAULT: '#ed1f42',     // Brand Red
+            700: '#c91a37',         // Darker red for hover
+            900: '#a1152c'          // Darkest red for pressed states
           }
         },
+        brand: {
+          'off-white': '#fcedf3',   // Off-White from brand
+          'off-black': '#0f0f10',   // Off-Black from brand
+          red: '#ed1f42'            // Brand Red
+        },
         border: {
-          DEFAULT: '#1f1f24'
+          DEFAULT: '#2a2a2c'       // Lighter border for better contrast
         }
       },
       fontFamily: {

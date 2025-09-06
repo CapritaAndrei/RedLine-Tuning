@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Button from '../ui/Button'
 
 export default function Hero() {
@@ -27,9 +28,26 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="space-y-8"
         >
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-8"
+          >
+            <Image
+              src="/images/RedLine-Logo.png"
+              alt="Redline Tuning Logo"
+              width={400}
+              height={120}
+              className="mx-auto h-16 md:h-20 lg:h-24 w-auto"
+              priority
+            />
+          </motion.div>
+
           {/* Main Heading - Hook that addresses biggest objection */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display tracking-tight">
-            <span className="text-white">Mașina ta arată</span>
+            <span className="text-brand-off-white">Mașina ta arată</span>
             <br />
             <span className="text-accent-red">ca în prima zi</span>
             <br />
@@ -45,7 +63,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            <strong className="text-white">Redline Tuning București</strong> - Ceramic coating, PPF și detailing premium cu <span className="text-accent-red font-semibold">garanție 100%</span> și materiale de calitate superioară.
+            <strong className="text-brand-off-white">Redline Tuning București</strong> - Ceramic coating, PPF și detailing premium cu <span className="text-accent-red font-semibold">garanție 100%</span> și materiale de calitate superioară.
           </motion.p>
           
           {/* CTA Buttons */}

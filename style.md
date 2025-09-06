@@ -16,27 +16,31 @@
 
 ## 2. Color Tokens (Tailwind Configuration)
 
-### Primary Palette
+### Primary Palette (Redline Brand)
 ```css
+/* Brand Colors */
+--brand-red: #ed1f42;         /* Primary brand red (R:237 G:31 B:66) */
+--brand-off-black: #0f0f10;   /* Off-black (R:15 G:15 B:16) */
+--brand-off-white: #fcedf3;   /* Off-white (R:252 G:237 B:243) */
+
 /* Background Colors */
---bg-primary: #0b0b0d;        /* Near-black primary background */
---bg-surface: #121216;        /* Card/section backgrounds */
---bg-elevated: #1a1a1f;       /* Elevated elements (modals, dropdowns) */
+--bg-primary: #0f0f10;        /* Brand off-black */
+--bg-surface: #1a1a1c;        /* Slightly lighter than primary */
+--bg-elevated: #242426;       /* Elevated elements */
 
 /* Accent Colors */
---accent-red: #EF233C;        /* Primary brand red */
---accent-red-700: #C1121F;    /* Darker red for hover states */
---accent-red-900: #8B0000;    /* Darkest red for pressed states */
+--accent-red: #ed1f42;        /* Brand red */
+--accent-red-700: #c91a37;    /* Darker red for hover states */
+--accent-red-900: #a1152c;    /* Darkest red for pressed states */
 
 /* Neutral Colors */
---gray-50: #F9FAFB;          /* White text */
+--off-white: #fcedf3;         /* Brand off-white for text */
 --gray-300: #D1D5DB;         /* Light gray text */
 --gray-500: #6B7280;         /* Medium gray text */
 --gray-700: #374151;         /* Dark gray text */
---gray-800: #1F2937;         /* Very dark gray */
 
 /* Utility Colors */
---border-color: #1f1f24;     /* Subtle borders */
+--border-color: #2a2a2c;     /* Lighter borders for better contrast */
 --success: #10B981;          /* Success states */
 --warning: #F59E0B;          /* Warning states */
 --error: #EF4444;            /* Error states */
@@ -47,19 +51,24 @@
 // tailwind.config.js
 colors: {
   background: {
-    primary: '#0b0b0d',
-    surface: '#121216',
-    elevated: '#1a1a1f'
+    primary: '#0f0f10',      // Brand off-black
+    surface: '#1a1a1c',      // Slightly lighter
+    elevated: '#242426'      // Elevated elements
   },
   accent: {
     red: {
-      DEFAULT: '#EF233C',
-      700: '#C1121F',
-      900: '#8B0000'
+      DEFAULT: '#ed1f42',     // Brand red
+      700: '#c91a37',         // Hover state
+      900: '#a1152c'          // Pressed state
     }
   },
+  brand: {
+    'off-white': '#fcedf3',   // Brand off-white
+    'off-black': '#0f0f10',   // Brand off-black
+    red: '#ed1f42'            // Brand red
+  },
   border: {
-    DEFAULT: '#1f1f24'
+    DEFAULT: '#2a2a2c'       // Better contrast borders
   }
 }
 ```
@@ -345,22 +354,40 @@ font-family: 'Urbanist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
 ## 9. Background Styling
 
-### Background Gradient
+### Background Styles
+
+#### Gradient Background
 ```css
 .gradient-background {
   background: radial-gradient(
     ellipse 80% 50% at 50% -20%,
-    rgba(239, 35, 60, 0.15),
+    rgba(237, 31, 66, 0.15),
     transparent 50%
   ),
   radial-gradient(
     ellipse 60% 80% at 80% 120%,
-    rgba(239, 35, 60, 0.1),
+    rgba(237, 31, 66, 0.1),
     transparent 50%
   ),
-  #0b0b0d;
+  #0f0f10;
 }
 ```
+
+#### Carbon Fiber Background
+```css
+.carbon-fiber-bg {
+  background: url('/images/bg.jpg') center/cover,
+              radial-gradient(
+                ellipse 80% 50% at 50% -20%,
+                rgba(237, 31, 66, 0.2),
+                transparent 50%
+              ),
+              #0f0f10;
+  background-blend-mode: multiply, normal, normal;
+}
+```
+
+**Usage**: Apply carbon fiber background to premium sections like Services to enhance the automotive feel while maintaining readability with the red accent overlay.
 
 ## 10. Accessibility & Contrast
 

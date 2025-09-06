@@ -23,15 +23,31 @@
   .gradient-background {
     background: radial-gradient(
       ellipse 80% 50% at 50% -20%,
-      rgba(239, 35, 60, 0.15),
+      rgba(237, 31, 66, 0.15),
       transparent 50%
     ),
     radial-gradient(
       ellipse 60% 80% at 80% 120%,
-      rgba(239, 35, 60, 0.1),
+      rgba(237, 31, 66, 0.1),
       transparent 50%
     ),
-    #0b0b0d;
+    #0f0f10;
+  }
+
+  /* Carbon Fiber Background */
+  .carbon-fiber-bg {
+    background: 
+      linear-gradient(
+        rgba(15, 15, 16, 0.85), 
+        rgba(15, 15, 16, 0.85)
+      ),
+      radial-gradient(
+        ellipse 80% 50% at 50% -20%,
+        rgba(237, 31, 66, 0.2),
+        transparent 50%
+      ),
+      url('/images/bg.png') center/cover;
+    background-attachment: fixed;
   }
 
   /* Button Styles */
