@@ -343,31 +343,7 @@ font-family: 'Urbanist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 - Lazy loading for below-fold content
 - Proper alt text for accessibility
 
-## 9. Custom Cursor & Background
-
-### Custom Cursor
-```css
-.custom-cursor {
-  cursor: none;
-}
-
-.cursor-dot {
-  width: 12px;
-  height: 12px;
-  background: #EF233C;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  z-index: 9999;
-  transition: transform 0.1s ease-out;
-}
-
-.cursor-dot.hover {
-  transform: scale(1.5);
-  background: rgba(239, 35, 60, 0.8);
-}
-```
+## 9. Background Styling
 
 ### Background Gradient
 ```css

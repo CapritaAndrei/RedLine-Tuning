@@ -58,34 +58,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://connect.facebook.net" />
       </head>
       <body className={`${inter.className} gradient-background`}>
-        {/* Custom Cursor */}
-        <div id="cursor-dot" className="cursor-dot"></div>
-        
         {children}
-        
-        {/* Custom Cursor Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener('DOMContentLoaded', function() {
-                const cursor = document.getElementById('cursor-dot');
-                
-                document.addEventListener('mousemove', function(e) {
-                  cursor.style.left = e.clientX - 6 + 'px';
-                  cursor.style.top = e.clientY - 6 + 'px';
-                });
-                
-                // Add hover effect for interactive elements
-                const interactiveElements = document.querySelectorAll('a, button, input, textarea, select, [role="button"]');
-                
-                interactiveElements.forEach(element => {
-                  element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-                  element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-                });
-              });
-            `,
-          }}
-        />
       </body>
     </html>
   )
