@@ -6,9 +6,9 @@ import Services from '../components/sections/Services'
 import Testimonials from '../components/sections/Testimonials'
 import FAQ from '../components/sections/FAQ'
 import FoundersNote from '../components/sections/FoundersNote'
+import LeadForm from '../components/LeadForm'
 // import Gallery from '../components/sections/Gallery'
 // import WhyRedline from '../components/sections/WhyRedline'
-// import LeadForm from '../components/LeadForm'
 // import Contact from '../components/sections/Contact'
 
 export default function Home() {
@@ -68,13 +68,20 @@ export default function Home() {
       </section>
       
       <section id="lead-form" className="section-padding">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Cere o <span className="text-accent-red">Ofertă Gratuită</span></h2>
-          <p className="text-gray-300 text-lg mb-8">
-            Formularul de lead va fi implementat în următorul pas
-          </p>
-          <div className="bg-background-surface p-8 rounded-2xl border border-border">
-            <p className="text-gray-400">Formular coming soon...</p>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
+              Cere o <span className="text-accent-red">Ofertă Gratuită</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Completează formularul și te contactăm în maxim 2 ore cu o ofertă personalizată pentru mașina ta
+            </p>
+          </div>
+          
+          {/* Lead Form */}
+          <div className="bg-background-surface rounded-3xl p-8 md:p-12 border border-border shadow-2xl">
+            <LeadForm />
           </div>
         </div>
       </section>
